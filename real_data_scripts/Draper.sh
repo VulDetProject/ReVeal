@@ -1,3 +1,6 @@
+## Choice of dataset: devign, chrome_debian
+## batch_size 128
+
 dataset=$1;
 batch_size=$2;
 export PYTHONPATH='../Vuld_SySe/':$PYTHONPATH

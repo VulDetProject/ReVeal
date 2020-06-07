@@ -1,14 +1,6 @@
-#dataset=$1;
-#batch_size=$2;
-#model_type=$3;
-#export PYTHONPATH='../Vuld_SySe/':$PYTHONPATH
-#for i in 1 2 3 4 5; do
-#	python ../Vuld_SySe/vul_det_main.py \
-#		--train_file ../data/VulDeePecker/${dataset}.json \
-#		--model_path ../models/VulDeePecker/${dataset}_intra_dataset-${i}.bin \
-#		--word_to_vec ../data/Word2Vec/li_et_al_wv \
-#		--batch_size $2 --model_type ${model_type} >> ../outputs/${dataset}-VulDeePecker-intra-${model_type}.log;
-#done
+## Choice of dataset: devign, chrome_debian
+## batch_size 128
+## model_type bigru
 
 dataset=$1;
 batch_size=$2;

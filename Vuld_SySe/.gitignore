@@ -1,0 +1,8 @@
+data/*
+models/*
+*models/*
+.idea/*
+__pycache__/*
+*.pyc
+*.bin
+*.egg

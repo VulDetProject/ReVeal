@@ -1,0 +1,3 @@
+[submodule "joern"]
+	path = joern
+	url = https://github.com/octopus-platform/joern.git

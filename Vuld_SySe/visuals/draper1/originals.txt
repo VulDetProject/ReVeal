@@ -1,0 +1,12 @@
+link_layer_show(struct ib_port *p, struct port_attribute *unused,
+			       char *buf)
+{
+	switch (rdma_port_get_link_layer(p->ibdev, p->port_num)) {
+	case IB_LINK_LAYER_INFINIBAND:
+		return sprintf(buf, "%s\n", "InfiniBand");
+	case IB_LINK_LAYER_ETHERNET:
+		return sprintf(buf, "%s\n", "Ethernet");
+	default:
+		return sprintf(buf, "%s\n", "Unknown");
+	}
+}

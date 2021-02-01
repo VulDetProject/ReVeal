@@ -30,10 +30,12 @@ bash build.sh
 Once the build is successful, go to the folder you want to perform your experiment, create a folder named `raw_code` and create every functions in separate C files. 
 We followed the custom to file names `<name>_<VUL>.c`, wehre the `<VUL>` is the Vulnerability identifier of the  function (0 for benign, 1 for vulnerable).
 
-First, you have to extract the slices from the parsed code. Modify the [data_processing/extract_slices.ipynb](data_processing/extract_slices.ipynb) for extracting slice. 
+1. You have to extract the slices from the parsed code. Modify the [data_processing/extract_slices.ipynb](data_processing/extract_slices.ipynb) for extracting slice. 
 This will generate a file `<data_name>_full_data_with_slices.json` in your data directory. 
 
-Finally, run [data_processing/create_ggnn_data.py](data_processing/create_ggnn_data.py) for formatting data into different formats.
+2. Run [data_processing/create_ggnn_data.py](data_processing/create_ggnn_data.py) for formatting data into different formats.
+
+3. Update [data_processing/full_data_prep_script.ipynb](data_processing/full_data_prep_script.ipynb) to input to the GGNN.
 
 ### Running GGNN. 
 

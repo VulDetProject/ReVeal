@@ -21,7 +21,7 @@ source ~/.bashrc
 ## Installation
 1. Enter into the source code
     ```
-    cd C-Code-Slicer
+    cd code-slicer
    ```
 2. Build **Joern**
     ```

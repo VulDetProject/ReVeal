@@ -17,7 +17,12 @@ if ( gradleVersionMajor < reguiredGradleVersionMajor ||
 
 allprojects {
     apply plugin: 'java'
-    repositories { mavenCentral() }
+    repositories {
+        // mavenCentral()
+        maven {
+            url "https://repo1.maven.org/maven2"
+        }
+    }
 }
 
 // Python utilities

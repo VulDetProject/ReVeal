@@ -86,9 +86,9 @@ def create_visual_graph(code, adjacency_list, file_name='test_graph', verbose=Fa
         graph.node(str(ln), str(ln) + '\t' + code[ln], shape='box')
         control_dependency, data_dependency = adjacency_list[ln]
         for anode in control_dependency:
-            graph.edge(str(ln), str(anode), color='red')
+            graph.edge(str(ln), str(anode), color='red', label='control')
         for anode in data_dependency:
-            graph.edge(str(ln), str(anode), color='blue')
+            graph.edge(str(ln), str(anode), color='blue', label='data')
     graph.render(file_name, view=verbose)
     print(graph)
 

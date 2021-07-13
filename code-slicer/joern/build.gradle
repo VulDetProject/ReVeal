@@ -19,6 +19,7 @@ allprojects {
     apply plugin: 'java'
     repositories {
         // mavenCentral()
+        // The above line tries to access repo1.maven.org/maven2 through http while https is required.
         maven {
             url "https://repo1.maven.org/maven2"
         }

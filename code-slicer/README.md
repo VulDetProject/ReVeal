@@ -12,7 +12,7 @@ This slicer is based on [Joern Fuzzy Code parser](https://github.com/octopus-pla
 wget https://services.gradle.org/distributions/gradle-2.0-bin.zip
 sudo mkdir /opt/gradle
 sudo unzip gradle-2.0-bin.zip -d /opt/gradle
-echo 'export PATH="$PATH:/opt/gradle/gradle-2.0/bin"' > ~/.bashrc
+echo 'export PATH="$PATH:/opt/gradle/gradle-2.0/bin"' >> ~/.bashrc
 source ~/.bashrc
 ```
 3. Graphviz (`sudo apt install graphviz-dev`)

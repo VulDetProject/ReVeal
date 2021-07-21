@@ -7,14 +7,21 @@ This slicer is based on [Joern Fuzzy Code parser](https://github.com/octopus-pla
 
 ## Depndencies
 
-1. Gradle (`sudo apt-get install gradle`)
-2. Graphviz (`sudo apt install graphviz-dev`)
-3. Python >= 3.5
+1. Gradle 2.0, which further requires Java 8 (`sudo apt-get install openjdk-8-jdk`)
+```
+wget https://services.gradle.org/distributions/gradle-2.0-bin.zip
+sudo mkdir /opt/gradle
+sudo unzip gradle-2.0-bin.zip -d /opt/gradle
+echo 'export PATH="$PATH:/opt/gradle/gradle-2.0/bin"' >> ~/.bashrc
+source ~/.bashrc
+```
+3. Graphviz (`sudo apt install graphviz-dev`)
+4. Python >= 3.5 with graphviz library (`pip install graphviz`)
 
 ## Installation
 1. Enter into the source code
     ```
-    cd C-Code-Slicer
+    cd code-slicer
    ```
 2. Build **Joern**
     ```
